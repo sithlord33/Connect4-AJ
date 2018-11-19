@@ -1,3 +1,12 @@
+/**
+ * author: Ricardo Jimenez Todd
+ * author: Carlos Jimenez
+ * 
+ * last update: 11/18/18
+ */
+
+package c4.ext;
+
 import c4.model.Board;
 
 import javax.sound.sampled.*;
