@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Connect4AJ">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/../.."/>
+    <property name="dir.jarfile" value="C:/Users/ricar/Desktop"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/C4AJ.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="c4.base.C4Dialog"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.workspace}/Connect4AJ/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/ricar/.p2/pool/plugins/org.aspectj.runtime_1.9.2.201811011643.jar"/>
+        </jar>
+    </target>
+</project>
